@@ -1,6 +1,6 @@
 import 'package:fast_location/modules/history/page/history_page.dart';
 import 'package:fast_location/modules/home/page/home_page.dart';
-import 'package:fast_location/modules/initial/initial.dart';
+import 'package:fast_location/modules/initial/initial_page.dart';
 import 'package:fast_location/routes/app_router.dart';
 import 'package:fast_location/shared/hive_config.dart';
 import 'package:flutter/material.dart';
