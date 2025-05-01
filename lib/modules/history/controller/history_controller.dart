@@ -1,6 +1,7 @@
-import 'package:fast_location/src/modules/home/model/address_model.dart';
+import 'package:fast_location/modules/home/model/address_model.dart';
+
 import 'package:mobx/mobx.dart';
-part 'history_controller.g.dart';
+
 
 class HistoryController extends _HistoryController with _$HistoryController {}
 
