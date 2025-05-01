@@ -4,7 +4,6 @@ import 'package:fast_location/modules/initial/initial_page.dart';
 import 'package:fast_location/routes/app_router.dart';
 import 'package:fast_location/shared/storage/hive_config.dart';
 import 'package:flutter/material.dart';
-import 'package:path/path.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

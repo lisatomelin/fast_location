@@ -2,9 +2,8 @@ import 'dart:html';
 import 'dart:ui';
 
 import 'package:fast_location/shared/colors/app_colors.dart';
-import 'package:fast_location/src/shared/colors/app_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:fast_location/src/modules/home/page/result.dart';
+import 'package:fast_location/modules/home/page/result.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

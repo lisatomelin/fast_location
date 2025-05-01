@@ -1,6 +1,7 @@
 import 'package:fast_location/modules/home/components/adress_list.dart';
 import 'package:fast_location/modules/home/model/address_model.dart';
 import 'package:fast_location/shared/colors/app_colors.dart';
+import 'package:fast_location/shared/components/app_loading.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';

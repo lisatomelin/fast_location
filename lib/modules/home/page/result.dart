@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
-import 'package:fast_location/src/modules/home/model/address_model.dart';
+import 'package:fast_location/modules/home/model/address_model.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:fast_location/src/modules/history/page/history_page.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:fast_location/src/modules/history/controller/history_controller.dart';
+import 'package:fast_location/modules/history/controller/history_controller.dart';
 
 var cepController = TextEditingController();
 
