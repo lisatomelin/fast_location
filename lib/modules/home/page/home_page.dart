@@ -1,4 +1,3 @@
-import 'dart:html';
 import 'dart:ui';
 
 import 'package:fast_location/shared/colors/app_colors.dart';

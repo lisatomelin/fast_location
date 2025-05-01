@@ -8,7 +8,6 @@ import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
 
-
 class HistoryPage extends StatefulWidget {
   const HistoryPage({super.key});
 
@@ -46,15 +45,15 @@ class SearchHistory {
 }
 
 class _HistoryPageState extends State<HistoryPage> {
-  //final HistoryController _controller = HistoryController();
+  final HistoryController _controller = HistoryController(); // Ensure this is defined
 
   @override
   void initState() {
     super.initState();
-   // _controller.loadData();
+    _controller.loadData(); // Ensure this method exists in HistoryController
   }
 
- @override
+  @override
   Widget build(BuildContext context) {
     return Observer(builder: (_) {
       return _controller.isLoading
@@ -111,10 +110,19 @@ class _HistoryPageState extends State<HistoryPage> {
                             ),
                           ),
                         ],
-                      )),
-                )),
+                      ))),
+                ),
               ));
     });
   }
 }
 
+class HistoryController {
+  // Define observable properties and methods here
+  bool isLoading = false;
+  List<AddressModel> addressHistoryList = [];
+
+  void loadData() {
+    // Load data logic here
+  }
+}
