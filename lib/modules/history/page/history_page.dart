@@ -1,4 +1,4 @@
-/*import 'package:fast_location/modules/home/components/adress_list.dart';
+import 'package:fast_location/modules/home/components/adress_list.dart';
 import 'package:fast_location/modules/home/model/address_model.dart';
 import 'package:fast_location/shared/colors/app_colors.dart';
 
@@ -53,11 +53,11 @@ class _HistoryPageState extends State<HistoryPage> {
    // _controller.loadData();
   }
 
- /* @override
+ @override
   Widget build(BuildContext context) {
     return Observer(builder: (_) {
-      //return _controller.isLoading
-          //? const AppLoading()
+      return _controller.isLoading
+          ? const AppLoading()
           : Scaffold(
               appBar: AppBar(
                 backgroundColor: AppColors.appPageBackground,
