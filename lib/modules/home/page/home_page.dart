@@ -100,14 +100,14 @@ class _HomePageState extends State<HomePage> {
                   39,
                   176,
                   1,
-                ), // Substitui MaterialStateProperty.all
+                ), 
                 minimumSize: Size(
                   widthMedia * 0.8,
                   15,
-                ), // Substitui MaterialStateProperty.all
+                ), 
                 padding: EdgeInsets.all(
                   heightMedia * 0.02,
-                ), // Substitui MaterialStateProperty.all
+                ), 
               ),
               child: Text(
                 "Localizar endereço",

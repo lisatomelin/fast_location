@@ -31,9 +31,7 @@ WidgetAlert(BuildContext context, String titulo) {
       child: TextFormField(
         controller: cepController,
         keyboardType: TextInputType.number,
-        decoration: InputDecoration(
-          icon: Icon(Icons.place),
-        ),
+        decoration: InputDecoration(icon: Icon(Icons.place)),
       ),
     ),
     actions: [
@@ -52,18 +50,19 @@ WidgetAlert(BuildContext context, String titulo) {
             showDialog(
               context: context,
               builder: (BuildContext context) {
-                return AlertDialog(
-                  content: Text('Erro: $e'),
-                );
+                return AlertDialog(content: Text('Erro: $e'));
               },
             );
           }
         },
         child: Text(
           "Pesquisar",
-          style: TextStyle(color: Color.fromRGBO(156, 39, 176, 1), fontSize: 20),
+          style: TextStyle(
+            color: Color.fromRGBO(156, 39, 176, 1),
+            fontSize: 20,
+          ),
         ),
-      )
+      ),
     ],
   );
 }
@@ -95,56 +94,70 @@ class AddressDetailPage extends StatelessWidget {
     var widthMedia = size.width;
     _addToSearchHistory(address);
     return Scaffold(
-        appBar: AppBar(
-          title: Text('Detalhes do Endereço'),
-        ),
-        body: Center(
-          child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Text('CEP: ${address.cep}',
-                    style: TextStyle(
-                        color: Color.fromRGBO(156, 39, 176, 1),
-                        fontWeight: FontWeight.bold,
-                        fontSize: 30)),
-                Text('Logradouro: ${address.logradouro}',
-                    style: TextStyle(fontSize: 25)),
-                Text('Bairro: ${address.bairro}',
-                    style: TextStyle(fontSize: 25)),
-                Text('Cidade: ${address.localidade}',
-                    style: TextStyle(fontSize: 25)),
-                Text('Estado: ${address.uf}', style: TextStyle(fontSize: 25)),
-                ElevatedButton(
-                    onPressed: _openGoogleMaps,
-                    child: Text('Traçar rota no Google Maps',
-                        style: TextStyle(
-                            color: Colors.white, fontSize: heightMedia * 0.03)),
-                    style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(Color.fromRGBO(156, 39, 176, 1)),
-                        minimumSize: MaterialStateProperty.all(
-                            Size(widthMedia * 0.8, 15)),
-                        padding: MaterialStateProperty.all<EdgeInsets>(
-                            EdgeInsets.all(heightMedia * 0.02)))),
-                SizedBox(
-                    height:
-                        20), // Adiciona um espaçamento entre o botão e o histórico
-                Container(
-                  // Container para mostrar o histórico
-                  alignment: Alignment.center,
-                  padding: EdgeInsets.symmetric(horizontal: 20),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Histórico de Busca',
-                        style: TextStyle(
-                            fontSize: 20, fontWeight: FontWeight.bold),
-                      ),
-                      SizedBox(height: 10),
-                      Observer(
-                        builder: (_) => ListView.builder(
+      appBar: AppBar(title: Text('Detalhes do Endereço')),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text(
+              'CEP: ${address.cep}',
+              style: TextStyle(
+                color: Color.fromRGBO(156, 39, 176, 1),
+                fontWeight: FontWeight.bold,
+                fontSize: 30,
+              ),
+            ),
+            Text(
+              'Logradouro: ${address.logradouro}',
+              style: TextStyle(fontSize: 25),
+            ),
+            Text('Bairro: ${address.bairro}', style: TextStyle(fontSize: 25)),
+            Text(
+              'Cidade: ${address.localidade}',
+              style: TextStyle(fontSize: 25),
+            ),
+            Text('Estado: ${address.uf}', style: TextStyle(fontSize: 25)),
+            ElevatedButton(
+              onPressed: _openGoogleMaps,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Color.fromRGBO(
+                  156,
+                  39,
+                  176,
+                  1,
+                ), // Cor de fundo
+                minimumSize: Size(widthMedia * 0.8, 15), // Tamanho mínimo
+                padding: EdgeInsets.all(
+                  heightMedia * 0.02,
+                ), // Espaçamento interno
+              ),
+              child: Text(
+                'Traçar rota no Google Maps',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: heightMedia * 0.03,
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ), // Adiciona um espaçamento entre o botão e o histórico
+            Container(
+              // Container para mostrar o histórico
+              alignment: Alignment.center,
+              padding: EdgeInsets.symmetric(horizontal: 20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Histórico de Busca',
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
+                  SizedBox(height: 10),
+                  Observer(
+                    builder:
+                        (_) => ListView.builder(
                           shrinkWrap: true,
                           itemCount:
                               historyController.addressHistoryList.length,
@@ -157,11 +170,13 @@ class AddressDetailPage extends StatelessWidget {
                             );
                           },
                         ),
-                      ),
-                    ],
                   ),
-                ),
-              ]),
-        ));
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
