@@ -1,7 +1,7 @@
 import 'package:fast_location/modules/home/model/address_model.dart';
 import 'package:mobx/mobx.dart';
 
-part 'history_controller.g.dart'; // Geração automática do MobX
+part 'history_controller.g.dart'; 
 
 class HistoryController extends _HistoryController with _$HistoryController {}
 
@@ -19,8 +19,7 @@ abstract class _HistoryController with Store {
   @action
   Future<void> loadData() async {
     isLoading = true;
-    // Lógica para carregar dados do histórico
-    await Future.delayed(const Duration(seconds: 2)); // Simulação de carregamento
+    await Future.delayed(const Duration(seconds: 2)); 
     isLoading = false;
   }
 

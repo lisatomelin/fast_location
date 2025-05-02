@@ -1,6 +1,4 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-
 import 'package:fast_location/modules/home/model/address_model.dart';
 
 class SearchAddress extends StatefulWidget {
@@ -30,7 +28,7 @@ class _SearchAddressState extends State<SearchAddress> {
               Text(
                 "Dados da Localização",
                 style: TextStyle(
-                    color: Colors.green,
+                    color: Color.fromRGBO(156, 39, 176, 1),
                     fontWeight: FontWeight.bold,
                     fontSize: 18),
               )
@@ -43,7 +41,7 @@ class _SearchAddressState extends State<SearchAddress> {
               const Text(
                 "Logradouro/Rua: ",
                 style: TextStyle(
-                  color: Colors.green,
+                  color: Color.fromRGBO(156, 39, 176, 1),
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -57,7 +55,7 @@ class _SearchAddressState extends State<SearchAddress> {
               const Text(
                 "Bairro/Distrito: ",
                 style: TextStyle(
-                  color: Colors.green,
+                  color: Color.fromRGBO(156, 39, 176, 1),
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -73,7 +71,7 @@ class _SearchAddressState extends State<SearchAddress> {
                   const Text(
                     "Complemento: ",
                     style: TextStyle(
-                      color: Colors.green,
+                      color: Color.fromRGBO(156, 39, 176, 1),
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -88,7 +86,7 @@ class _SearchAddressState extends State<SearchAddress> {
               const Text(
                 "Cidade/UF: ",
                 style: TextStyle(
-                  color: Colors.green,
+                  color: Color.fromRGBO(156, 39, 176, 1),
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -102,7 +100,7 @@ class _SearchAddressState extends State<SearchAddress> {
               const Text(
                 "CEP: ",
                 style: TextStyle(
-                  color: Colors.green,
+                  color: Color.fromRGBO(156, 39, 176, 1),
                   fontWeight: FontWeight.bold,
                 ),
               ),

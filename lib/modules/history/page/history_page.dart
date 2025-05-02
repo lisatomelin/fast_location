@@ -1,8 +1,7 @@
-import 'package:fast_location/modules/home/components/adress_list.dart';
+import 'package:fast_location/modules/home/components/address_list.dart';
 import 'package:fast_location/modules/home/model/address_model.dart';
 import 'package:fast_location/shared/colors/app_colors.dart';
 import 'package:fast_location/shared/components/app_loading.dart';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -45,12 +44,12 @@ class SearchHistory {
 }
 
 class _HistoryPageState extends State<HistoryPage> {
-  final HistoryController _controller = HistoryController(); // Ensure this is defined
+  final HistoryController _controller = HistoryController(); 
 
   @override
   void initState() {
     super.initState();
-    _controller.loadData(); // Ensure this method exists in HistoryController
+    _controller.loadData(); 
   }
 
   @override

@@ -11,11 +11,11 @@ class SearchEmpty extends StatelessWidget {
         Icon(
           Icons.directions,
           size: 80,
-          color: Colors.green,
+          color: Color.fromRGBO(156, 39, 176, 1),
         ),
         Padding(
           padding: EdgeInsets.all(20.0),
-          child: Text("Faça uma busca para localizar seu destino",
+          child: Text("Realize uma busca e localize seu destino",
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
         )

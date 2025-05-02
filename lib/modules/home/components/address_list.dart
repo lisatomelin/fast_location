@@ -49,7 +49,7 @@ class _AddressListState extends State<AddressList> {
             Icon(
               Icons.location_off,
               size: 40,
-              color: Colors.green,
+              color: Color.fromRGBO(156, 39, 176, 1),
             ),
             Padding(
               padding: EdgeInsets.all(10.0),
