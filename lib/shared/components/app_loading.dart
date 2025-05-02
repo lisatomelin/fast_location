@@ -11,7 +11,7 @@ class AppLoading extends StatelessWidget {
       body: Center(
         child: CircularProgressIndicator(
           backgroundColor: AppColors.appPageBackground,
-          valueColor: AlwaysStoppedAnimation<Color>(Colors.green),
+          valueColor: AlwaysStoppedAnimation<Color>(Color.fromRGBO(156, 39, 176, 1)),
         ),
       ),
     );

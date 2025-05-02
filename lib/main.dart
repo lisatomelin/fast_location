@@ -19,7 +19,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: 'Fast Location',
       theme: ThemeData(
-        primarySwatch: Colors.green,
+        primarySwatch: Colors.purple,
       ),
       home: const InitialPage(),
       debugShowCheckedModeBanner: false,

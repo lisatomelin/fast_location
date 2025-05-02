@@ -65,7 +65,7 @@ class _HistoryPageState extends State<HistoryPage> {
                 leading: IconButton(
                   icon: const Icon(
                     Icons.arrow_back,
-                    color: Colors.green,
+                    color: Color.fromRGBO(156, 39, 176, 1),
                   ),
                   onPressed: () => Navigator.pop(context),
                 ),
@@ -90,14 +90,14 @@ class _HistoryPageState extends State<HistoryPage> {
                               Icon(
                                 Icons.share_location,
                                 size: 30,
-                                color: Colors.green,
+                                color: Color.fromRGBO(156, 39, 176, 1),
                               ),
                               SizedBox(
                                 width: 10,
                               ),
                               Text("Endereços Localizados",
                                   style: TextStyle(
-                                      color: Colors.green,
+                                      color: Color.fromRGBO(156, 39, 176, 1),
                                       fontSize: 25,
                                       fontStyle: FontStyle.italic,
                                       fontWeight: FontWeight.bold))
@@ -118,11 +118,11 @@ class _HistoryPageState extends State<HistoryPage> {
 }
 
 class HistoryController {
-  // Define observable properties and methods here
+
   bool isLoading = false;
   List<AddressModel> addressHistoryList = [];
 
   void loadData() {
-    // Load data logic here
+ 
   }
 }
