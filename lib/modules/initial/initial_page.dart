@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:fast_location/routes/app_router.dart';
 import 'package:fast_location/shared/colors/app_colors.dart';
 import 'package:flutter/material.dart';

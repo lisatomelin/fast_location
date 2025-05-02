@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:fast_location/modules/home/model/address_model.dart';
 import 'package:hive/hive.dart';
 

@@ -80,8 +80,9 @@ class AddressDetailPage extends StatelessWidget {
   _openGoogleMaps() async {
     String url =
         'https://www.google.com/maps/search/?api=1&query=${address.cep}';
-    if (await canLaunch(url)) {
-      await launch(url);
+    final Uri uri = Uri.parse(url);
+    if (await canLaunchUrl(uri)) {
+      await launchUrl(uri, mode: LaunchMode.externalApplication);
     } else {
       throw 'Não é possível acessar a URL $url';
     }

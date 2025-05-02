@@ -9,8 +9,10 @@ part of 'history_controller.dart';
 // ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic, no_leading_underscores_for_local_identifiers
 
 mixin _$HistoryController on _HistoryController, Store {
-  late final _$isLoadingAtom =
-      Atom(name: '_HistoryController.isLoading', context: context);
+  late final _$isLoadingAtom = Atom(
+    name: '_HistoryController.isLoading',
+    context: context,
+  );
 
   @override
   bool get isLoading {
@@ -25,8 +27,10 @@ mixin _$HistoryController on _HistoryController, Store {
     });
   }
 
-  late final _$hasAddressAtom =
-      Atom(name: '_HistoryController.hasAddress', context: context);
+  late final _$hasAddressAtom = Atom(
+    name: '_HistoryController.hasAddress',
+    context: context,
+  );
 
   @override
   bool get hasAddress {
@@ -41,8 +45,10 @@ mixin _$HistoryController on _HistoryController, Store {
     });
   }
 
-  late final _$addressHistoryListAtom =
-      Atom(name: '_HistoryController.addressHistoryList', context: context);
+  late final _$addressHistoryListAtom = Atom(
+    name: '_HistoryController.addressHistoryList',
+    context: context,
+  );
 
   @override
   ObservableList<AddressModel> get addressHistoryList {
@@ -57,21 +63,26 @@ mixin _$HistoryController on _HistoryController, Store {
     });
   }
 
-  late final _$loadDataAsyncAction =
-      AsyncAction('_HistoryController.loadData', context: context);
+  late final _$loadDataAsyncAction = AsyncAction(
+    '_HistoryController.loadData',
+    context: context,
+  );
 
   @override
   Future<void> loadData() {
     return _$loadDataAsyncAction.run(() => super.loadData());
   }
 
-  late final _$_HistoryControllerActionController =
-      ActionController(name: '_HistoryController', context: context);
+  late final _$_HistoryControllerActionController = ActionController(
+    name: '_HistoryController',
+    context: context,
+  );
 
   @override
   void addToSearchHistory(AddressModel address) {
     final _$actionInfo = _$_HistoryControllerActionController.startAction(
-        name: '_HistoryController.addToSearchHistory');
+      name: '_HistoryController.addToSearchHistory',
+    );
     try {
       return super.addToSearchHistory(address);
     } finally {
